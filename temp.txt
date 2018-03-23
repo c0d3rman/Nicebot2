@@ -1,0 +1,12 @@
+RL agent: takes in a message (+context) as input, ouputs text
+Reward net: takes in a sentence as input and predicts the sentiment of a human response to it. Trained using movie dataset + stock senitment analysis
+
+
+Problem: agent outputs gibberish
+Solution: discriminator net between model and real sentences
+
+Problem: agent overfits to reward net
+Solution:
+- Force output variety
+- Train n reward nets and randomize
+- Discriminator helps too
